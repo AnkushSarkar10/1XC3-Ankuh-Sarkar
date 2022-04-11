@@ -1,0 +1,103 @@
+\hypertarget{course_8c}{}\doxysection{course.\+c File Reference}
+\label{course_8c}\index{course.c@{course.c}}
+
+
+This file provides us functions to Enroll Students in courses, print courses, get student with the highest average and get a list of students passing a course.  
+
+
+{\ttfamily \#include \char`\"{}course.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for course.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{course_8c_af3abbc650ef56ffff427a62dad63fc77}{enroll\+\_\+student}} (\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$course, \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Enrolls a student into a course. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{course_8c_a99bf8b3f3c2d5dc7cf798ed445eaaa77}{print\+\_\+course}} (\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$course)
+\begin{DoxyCompactList}\small\item\em Prints information about the course in the following format Name \+: Name\+\_\+of\+\_\+the\+\_\+course Code \+: Course\+\_\+code Total students \+: total\+\_\+number\+\_\+of\+\_\+students. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$ \mbox{\hyperlink{course_8c_ae0130f7ef7b879c9a790ee27a5ce21b7}{top\+\_\+student}} (\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$course)
+\begin{DoxyCompactList}\small\item\em returns the pointer to the student with the highest average in a given course \end{DoxyCompactList}\item 
+\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$ \mbox{\hyperlink{course_8c_a3f939f002e675839379b8d2dff044162}{passing}} (\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$course, int $\ast$total\+\_\+passing)
+\begin{DoxyCompactList}\small\item\em returns the students passing in a course \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file provides us functions to Enroll Students in courses, print courses, get student with the highest average and get a list of students passing a course. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{course_8c_af3abbc650ef56ffff427a62dad63fc77}\label{course_8c_af3abbc650ef56ffff427a62dad63fc77}} 
+\index{course.c@{course.c}!enroll\_student@{enroll\_student}}
+\index{enroll\_student@{enroll\_student}!course.c@{course.c}}
+\doxysubsubsection{\texorpdfstring{enroll\_student()}{enroll\_student()}}
+{\footnotesize\ttfamily void enroll\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$}]{course,  }\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Enrolls a student into a course. 
+
+Funtion prototypes of the funcs defined in \mbox{\hyperlink{course_8c}{course.\+c}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & The course to enroll the student in \\
+\hline
+{\em student} & The student to be enrolled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{course_8c_a3f939f002e675839379b8d2dff044162}\label{course_8c_a3f939f002e675839379b8d2dff044162}} 
+\index{course.c@{course.c}!passing@{passing}}
+\index{passing@{passing}!course.c@{course.c}}
+\doxysubsubsection{\texorpdfstring{passing()}{passing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}$\ast$ passing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$}]{course,  }\item[{int $\ast$}]{total\+\_\+passing }\end{DoxyParamCaption})}
+
+
+
+returns the students passing in a course 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & Course to get passing students from \\
+\hline
+{\em total\+\_\+passing} & pointer to an int storing the number of students passing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Student$\ast$ List of passing students 
+\end{DoxyReturn}
+\mbox{\Hypertarget{course_8c_a99bf8b3f3c2d5dc7cf798ed445eaaa77}\label{course_8c_a99bf8b3f3c2d5dc7cf798ed445eaaa77}} 
+\index{course.c@{course.c}!print\_course@{print\_course}}
+\index{print\_course@{print\_course}!course.c@{course.c}}
+\doxysubsubsection{\texorpdfstring{print\_course()}{print\_course()}}
+{\footnotesize\ttfamily void print\+\_\+course (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$}]{course }\end{DoxyParamCaption})}
+
+
+
+Prints information about the course in the following format Name \+: Name\+\_\+of\+\_\+the\+\_\+course Code \+: Course\+\_\+code Total students \+: total\+\_\+number\+\_\+of\+\_\+students. 
+
+\DoxyHorRuler{0}
+
+
+
+\begin{DoxyItemize}
+\end{DoxyItemize}course The course whose information needs to be printed \mbox{\Hypertarget{course_8c_ae0130f7ef7b879c9a790ee27a5ce21b7}\label{course_8c_ae0130f7ef7b879c9a790ee27a5ce21b7}} 
+\index{course.c@{course.c}!top\_student@{top\_student}}
+\index{top\_student@{top\_student}!course.c@{course.c}}
+\doxysubsubsection{\texorpdfstring{top\_student()}{top\_student()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}$\ast$ top\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{course_8h_a2540079ef5f89c5f4aea7a0255f11475}{Course}} $\ast$}]{course }\end{DoxyParamCaption})}
+
+
+
+returns the pointer to the student with the highest average in a given course 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & The course you are finding the top student in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Student$\ast$ Pointer to the top student in that course 
+\end{DoxyReturn}

@@ -1,0 +1,121 @@
+\hypertarget{student_8h}{}\doxysection{student.\+h File Reference}
+\label{student_8h}\index{student.h@{student.h}}
+
+
+Header file for \mbox{\hyperlink{student_8c}{student.\+c}} containing the function prototypes and struct definations.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__student}{\+\_\+student}}
+\begin{DoxyCompactList}\small\item\em Struct to hold info about a student such as first name last name student id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__student}{\+\_\+student}} \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}
+\begin{DoxyCompactList}\small\item\em Struct to hold info about a student such as first name last name student id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{student_8h_a1ee4302d01d8908db57e238f5f9dd9f5}{add\+\_\+grade}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student, double grade)
+\begin{DoxyCompactList}\small\item\em Funtion prototypes of the funcs defined in \mbox{\hyperlink{student_8c}{student.\+c}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{student_8h_a3efb000301e4e0c8e68930bc93e0958e}{average}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Calculate the average of a student. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{student_8h_a4d964bf73eb1b291728dbf7380a9e6ab}{print\+\_\+student}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Print info regaurding a student such as Name\+: name\+\_\+of\+\_\+the\+\_\+student ID\+: student\+\_\+id Grades\+: list\+\_\+of\+\_\+the\+\_\+grades\+\_\+of\+\_\+the\+\_\+student. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$ \mbox{\hyperlink{student_8h_a4aa2c655fdf24df90c3e85b18f605b9a}{generate\+\_\+random\+\_\+student}} (int grades)
+\begin{DoxyCompactList}\small\item\em Genarates a random student with a given number of grades. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for \mbox{\hyperlink{student_8c}{student.\+c}} containing the function prototypes and struct definations. 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{student_8h_ac91ec92866bb82e1ee36c75280929c43}\label{student_8h_ac91ec92866bb82e1ee36c75280929c43}} 
+\index{student.h@{student.h}!Student@{Student}}
+\index{Student@{Student}!student.h@{student.h}}
+\doxysubsubsection{\texorpdfstring{Student}{Student}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__student}{\+\_\+student}} \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}}
+
+
+
+Struct to hold info about a student such as first name last name student id. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{student_8h_a1ee4302d01d8908db57e238f5f9dd9f5}\label{student_8h_a1ee4302d01d8908db57e238f5f9dd9f5}} 
+\index{student.h@{student.h}!add\_grade@{add\_grade}}
+\index{add\_grade@{add\_grade}!student.h@{student.h}}
+\doxysubsubsection{\texorpdfstring{add\_grade()}{add\_grade()}}
+{\footnotesize\ttfamily void add\+\_\+grade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student,  }\item[{double}]{grade }\end{DoxyParamCaption})}
+
+
+
+Funtion prototypes of the funcs defined in \mbox{\hyperlink{student_8c}{student.\+c}}. 
+
+Funtion prototypes of the funcs defined in \mbox{\hyperlink{student_8c}{student.\+c}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & the student you want to append the grade to \\
+\hline
+{\em grade} & the grade to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{student_8h_a3efb000301e4e0c8e68930bc93e0958e}\label{student_8h_a3efb000301e4e0c8e68930bc93e0958e}} 
+\index{student.h@{student.h}!average@{average}}
+\index{average@{average}!student.h@{student.h}}
+\doxysubsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily double average (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Calculate the average of a student. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & Student to find the average of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+students avg 
+\end{DoxyReturn}
+\mbox{\Hypertarget{student_8h_a4aa2c655fdf24df90c3e85b18f605b9a}\label{student_8h_a4aa2c655fdf24df90c3e85b18f605b9a}} 
+\index{student.h@{student.h}!generate\_random\_student@{generate\_random\_student}}
+\index{generate\_random\_student@{generate\_random\_student}!student.h@{student.h}}
+\doxysubsubsection{\texorpdfstring{generate\_random\_student()}{generate\_random\_student()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}}$\ast$ generate\+\_\+random\+\_\+student (\begin{DoxyParamCaption}\item[{int}]{grades }\end{DoxyParamCaption})}
+
+
+
+Genarates a random student with a given number of grades. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grades} & number of grades the student will have \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Student$\ast$ pointer to the randomly generated student 
+\end{DoxyReturn}
+\mbox{\Hypertarget{student_8h_a4d964bf73eb1b291728dbf7380a9e6ab}\label{student_8h_a4d964bf73eb1b291728dbf7380a9e6ab}} 
+\index{student.h@{student.h}!print\_student@{print\_student}}
+\index{print\_student@{print\_student}!student.h@{student.h}}
+\doxysubsubsection{\texorpdfstring{print\_student()}{print\_student()}}
+{\footnotesize\ttfamily void print\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Print info regaurding a student such as Name\+: name\+\_\+of\+\_\+the\+\_\+student ID\+: student\+\_\+id Grades\+: list\+\_\+of\+\_\+the\+\_\+grades\+\_\+of\+\_\+the\+\_\+student. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & \\
+\hline
+\end{DoxyParams}
